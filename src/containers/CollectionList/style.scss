@@ -1,0 +1,38 @@
+.home-page {
+
+}
+
+.focus-wrapper {
+    // text-align: -webkit-center;
+
+    .title {
+      background-color: #614fe5;
+      padding: 10px 0px;
+      text-align: center;
+      border-radius: 12px;
+      color: white;
+    }
+
+    .beta-title {
+      background-color:#222831;
+      padding: 8px 10px;
+      text-align: center;
+      color:white;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .email{
+      color: white;
+    }
+
+    .mark{
+      color: orange;
+      text-align: left;
+    }
+
+    .email-body{
+      text-align: right;
+    }
+    
+  }

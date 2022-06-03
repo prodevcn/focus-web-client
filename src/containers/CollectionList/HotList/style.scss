@@ -1,0 +1,28 @@
+.hot-list {
+  margin: 50px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &__img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 10px;
+    row-gap: 30px;
+  }
+}

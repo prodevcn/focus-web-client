@@ -1,0 +1,8 @@
+.type-list {
+  width: 100%;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 10px;
+  row-gap: 30px;
+}

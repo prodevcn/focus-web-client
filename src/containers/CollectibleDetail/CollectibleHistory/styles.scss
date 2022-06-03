@@ -1,0 +1,64 @@
+.collectible-history {
+  margin-bottom: 170px;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .collectible-history-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+    min-height: 400px;
+
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      &__header {
+        th {
+          padding: 10px 0 15px;
+          color: #9e9e9e;
+          font-size: 16px;
+          border-bottom: 1px solid #d6d6d6;
+          text-align: left;
+          width: 20%;
+          font-weight: normal;
+        }
+      }
+
+      &__row {
+        td {
+          padding: 10px 0;
+          border-bottom: 1px solid #d6d6d6;
+
+          .from-info {
+            display: flex;
+            align-items: center;
+
+            .user-img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-right: 10px;
+            }
+          }
+
+          .transaction-info {
+            text-decoration: underline;
+          }
+        }
+
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

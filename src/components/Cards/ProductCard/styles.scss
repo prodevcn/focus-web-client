@@ -1,0 +1,207 @@
+.product-card {
+  width: 230px;
+  min-height: 390px;
+  background: #ffffff;
+  box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  animation-duration: 0.5s;
+  animation-name: slideIn;
+  overflow: hidden;
+
+  .main-view {
+    padding: 3px;
+  }
+
+  .quantity-view {
+    background-color:#222831;
+    padding: 4px 20px;
+    text-align: center;
+    color:white;
+    display: flex;
+  }
+
+  .card-action {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 230px;
+
+    .product-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .product-content {
+    padding: 10px;
+    min-height: 110px;
+
+    .product-title {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .product-description {
+      display: flex;
+      align-items: center;
+
+      &__img {
+        width: 20px;
+        height: auto;
+        margin-right: 7px;
+      }
+
+      &__text {
+        color: #c3c3c3;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .product-footer {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rating-container {
+      display: flex;
+      align-items: center;
+
+      .bid-img {
+        width: 20px;
+        height: auto;
+      }
+
+      .bid-text {
+        font-size: 14px;
+        color: #00bb62;
+      }
+
+      .rating-img {
+        margin: 0 5px;
+      }
+
+      .rating-text {
+        font-size: 14px;
+      }
+    }
+
+    .trader-image-wrapper {
+      display: flex;
+      align-items: center;
+
+      .trader-image {
+        width: 20px;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .card-action {
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .action-header {
+    background: #e8ebe8;
+    padding: 15px 10px;
+
+    &__title {
+      font-size: 16px;
+      color: #8b8d8a;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .divider-line {
+      border: none;
+      border-bottom: 1px solid #d7d7d7;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      .action-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .user-detail {
+        .user-code {
+          margin: 0;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .user-type {
+          color: #8b8d8a;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .action-body {
+    padding: 10px;
+
+    &__item {
+      font-size: 18px;
+      border-bottom: 1px solid #d7d7d7;
+      padding: 10px 0;
+      font-weight: bold;
+
+      .sale-input{
+        flex: 1;
+        height: 30px;
+        outline: none;
+        border-radius: 6px;
+        background: #f0f0f0;
+        border: 1px solid #ededed;
+        padding: 10px 10px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: rotateY(180deg);
+    }
+
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+}

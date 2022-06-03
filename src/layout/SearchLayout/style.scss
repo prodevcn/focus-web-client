@@ -1,0 +1,135 @@
+.app-container {
+  .search-bar {
+    height: 80px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+    color: #000000;
+
+    .logo-wrapper {
+
+      .logo {
+        height: 100%;
+        width: auto;
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }    
+
+    .search-wrapper {
+      flex: 1;
+
+      .search-input {
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 20px;
+        outline: none;
+        border: none;
+        background: #f0f0f0;
+        height: 40px;
+        font-size: 15px;
+      }
+    }
+
+    .search-btn {
+      border: none;
+      // border-radius: 10px;
+      height: 40px;
+      outline: none;
+      font-size: 14px;
+      margin-left: 5px;
+      padding: 0 10px;
+      transition: all ease-in 0.2s;
+
+      &.btn-normal {
+        color: #000000;
+        background: #ffffff;
+
+        &:hover {
+          color: #ffffff;
+          background: #db4d75;
+        }
+      }
+
+      &.btn-dark {
+        color: #ffffff;
+        background: #000000;
+        border: 1px solid #000000;
+        font-size: 16px;
+
+        &:hover {
+          color: #000000;
+          background: #ffffff;
+        }
+      }
+
+      &.btn-gigas {
+        color: #ffffff;
+        background: #222831;
+        border: 1px solid #222831;
+        font-size: 16px;
+
+        &:hover {
+          color: #000000;
+          background: #ffffff;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      .user-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .bnb-wrapper {
+      margin:0px 20px;
+    }
+
+    .logo-bar {
+      padding: 0 30px;
+      display: flex;
+      // width: 100%;
+      align-items: center;
+      
+      .focus-wrapper {
+        flex: 1.45;
+
+        .logo {
+          height: 60px;
+          // margin-top: 30px;
+        }
+      }
+    }
+
+    .search-group{
+      display: inherit;
+      width: 100%;
+    }
+
+    .button-group{
+      display: inherit;
+      width: 100%;
+    }
+
+  }  
+
+  .main-content {
+
+  }
+
+}

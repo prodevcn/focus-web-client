@@ -1,0 +1,17 @@
+.app-header {
+  height: 80px;
+  width: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header-text {
+    color: #ffffff;
+
+    a {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+  }
+}

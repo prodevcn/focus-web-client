@@ -1,0 +1,193 @@
+.create-collectible-page {
+  margin-bottom: 60px;
+
+  .page-title {
+    font-size: 32px;
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .page-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .collectible-editor {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      padding: 50px;
+      margin-bottom: 40px;
+
+      .collectible-img-input {
+        margin-bottom: 30px;
+
+        .drop {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .dropzone-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            object-fit: cover;
+          }
+
+          .dropzone-preview {
+            width: 200px;
+            height: 200px;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+            .upload-icon {
+              height: 30px;
+              margin-bottom: 20px;
+            }
+
+            .upload-description {
+              font-size: 20px;
+              text-decoration: underline;
+            }
+          }
+
+          .dropzone-description {
+            color: #999999;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+
+      .collectible-form-control {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+
+        .form-label {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #000000;
+        }
+
+        .form-label-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+          .help-link {
+            font-size: 14px;
+            font-weight: bold;
+            color: #999999;
+            text-decoration: none;
+          }
+        }
+
+        .form-input-wrapper {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          .form-input {
+            flex: 1;
+            height: 50px;
+            outline: none;
+            border-radius: 7px;
+            background: #f0f0f0;
+            border: 1px solid #ededed;
+            padding: 10px 20px;
+
+            &.text-area {
+              padding: 20px;
+              height: 200px;
+            }
+          }
+
+          .form-input-description {
+            background: #fafafa;
+            color: #6e6e6e;
+            border-radius: 0 7px 7px 0;
+            margin-left: -10px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+          }
+        }
+
+        .form-control-description {
+          font-size: 14px;
+          color: #999999;
+          margin-top: 10px;
+        }
+      }
+
+      .submit-btn {
+        width: 100%;
+        border-radius: 7px;
+        border: 1px solid #000000;
+        background: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        outline: none;
+        height: 50px;
+        margin-top: 40px;
+
+        &:hover {
+          cursor: pointer;
+          background: #ffffff;
+          color: #000000;
+        }
+
+        &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+
+          &:hover {
+            background: black !important;
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    .collectible-preview {
+      margin-left: 40px;
+
+      .product-card {
+        animation: none;
+      }
+
+      .preview-description {
+        font-size: 14px;
+        text-align: center;
+        color: #999999;
+        width: 80%;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .error {
+    color: #f82e0c;
+    font-size: 14px;
+  }
+}

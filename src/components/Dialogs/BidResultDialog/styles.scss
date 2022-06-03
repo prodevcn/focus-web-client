@@ -1,0 +1,70 @@
+.buy-collectible-dialog {
+  position: relative;
+
+  .MuiPaper-rounded {
+    border-radius: 20px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .dialog-body {
+    padding: 50px;
+
+    .dialog-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 0 0 10px;
+    }
+
+    .dialog-description {
+      font-size: 16px;
+      margin: 0 0 40px;
+    }
+
+    .collectible-prices {
+      margin-bottom: 40px;
+
+      &__item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+          font-size: 16px;
+        }
+
+        &.total {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .confirm-btn {
+      width: 100%;
+      border-radius: 7px;
+      height: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      background: #000000;
+      border: 1px solid #000000;
+      outline: none;
+
+      &:hover {
+        cursor: pointer;
+        color: #000000;
+        background: #ffffff;
+      }
+    }
+  }
+}

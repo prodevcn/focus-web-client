@@ -1,0 +1,135 @@
+.collectible-buy-card {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.1);
+
+  .buy-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .rating-infos {
+      display: flex;
+      align-items: center;
+
+      .rating-img {
+        margin-right: 10px;
+        height: 20px;
+      }
+
+      .rating-text {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .collectible-description {
+    margin: 0;
+    font-size: 14px;
+    color: #8b8d8a;
+  }
+
+  .quantity-info{
+    background-color:#222831;
+    padding: 4px 20px;
+    text-align: center;
+    color:white;
+    display: flex;
+  }
+
+  .buy-btn {
+    width: 100%;
+    margin: 15px 0 25px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    background: #222831;
+    color: #ffffff;
+    height: 50px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+
+  .owner-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .like-icon{
+      height: 60px;
+    }
+    .owner-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .owner-info-detail {
+      .owner-name {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .owner-type {
+        font-size: 14px;
+        color: #8b8d8a;
+      }
+    }
+  }
+
+  .card-divider {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  .card-actions {
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      &__img {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        margin-right: 30px;
+      }
+
+      &__imgipfs {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+      }
+
+      &__text {
+        font-size: 18px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+}
