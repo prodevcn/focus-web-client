@@ -15,7 +15,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@pinata/sdk": "^1.1.23",
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "big-integer": "^1.6.51",
     "bn.js": "^5.2.0",
     "connected-react-router": "^6.5.2",
